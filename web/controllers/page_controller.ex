@@ -1,5 +1,7 @@
-defmodule RestApi.V1.PostController do
+defmodule RestApi.PageController do
+	use RestApi.Web, :controller
 
-	def index do
+	def index(conn, _params) do
+	  render conn, "index.html"
 	end
 end
